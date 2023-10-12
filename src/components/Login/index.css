@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 4px 5px 3px 2px gray;
+
+  width: 300px;
+  margin-left: 100px;
+  border-radius: 7px;
+}
+.logo {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.logo-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#input1 {
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 28px;
+  background: #e2e8f0;
+
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+label {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#input2 {
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 28px;
+
+  background: #e2e8f0;
+
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.btn {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 30px;
+  background: #f7931e;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+.kai {
+  height: 10px;
+}
