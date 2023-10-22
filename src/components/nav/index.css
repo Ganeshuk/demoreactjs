@@ -1,0 +1,75 @@
+.badass {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #f7931e;
+  margin-left: 20px;
+}
+.nav-align {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-home {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+}
+.nav-cart {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+}
+.nav-button {
+  width: 73px;
+  height: 32px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #f7931e;
+  border: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.align {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 250px;
+}
+.nav-home1 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+  color: orange;
+}
+.nav-cart1 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+  color: orange;
+}
+.link {
+  text-decoration: none;
+}

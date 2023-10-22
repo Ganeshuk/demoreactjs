@@ -2,6 +2,7 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 
 import {SpinnerDotted} from 'spinners-react'
+import {Redirect} from 'react-router-dom'
 
 import './index.css'
 
@@ -35,13 +36,16 @@ class Login extends Component {
       Cookies.set('jwt', res.jwt_token, {expires: 1})
       history.replace('/')
     } else {
+      this.setState({t: true})
       console.log(response)
     }
-    this.setState({t: true})
   }
 
   render() {
     const {t} = this.state
+    if (Cookies.get('jwt') !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <div className="main">
         <form onSubmit={this.submit}>

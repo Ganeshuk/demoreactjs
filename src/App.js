@@ -1,30 +1,20 @@
 import {Component} from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Login from './components/Login'
+import Home from './components/Home'
+import Cart from './components/Cart'
+import Items from './components/Items'
 import './App.css'
-
-const sortByOptions = [
-  {
-    id: 0,
-    displayText: 'Highest',
-    value: 'Highest',
-  },
-  {
-    id: 2,
-    displayText: 'Lowest',
-    value: 'Lowest',
-  },
-]
 
 class App extends Component {
   render() {
-    console.log(sortByOptions)
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/Login" component={Login} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path="/Login" component={Login} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cart" component={Cart} />
+        <Route exact path="/items/:id" component={Items} />
+      </Switch>
     )
   }
 }
